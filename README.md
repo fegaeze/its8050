@@ -50,6 +50,10 @@ For the QOS, I have chosen to go with the option of "exactly once" across the to
 - In the 433 GUI flow, the hostCmd node's command will have to be changed. The current command `ssh pi@192.168.0.100 /home/pi/work/rpi-rf/scripts/rpi-rf_send` is configured for my RPi and Node-RED installation.
 - In the temperature sensor GUI flow, the hostTempCmd node's command will also have to be changed. The current command `ssh pi@192.168.0.100 vcgencmd measure_temp` is configured for my RPi and Node-RED installation.
 - For the bridge to work, the above configuration will have to be added to your mosquitto.conf file.
-- The local Mosquitto MQTT broker's IP address will have to be changed to the IP address of your own installation.
+- The local Mosquitto MQTT broker's IP address will have to be changed to the IP address of your own installation.      
+&nbsp;
+
+### Other Notes
+- I used the raspberrypi flow given in the FRED documentation/guide task for the CPU temperature GUI flow
 &nbsp;
 &nbsp;
